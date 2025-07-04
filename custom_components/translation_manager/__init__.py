@@ -1,7 +1,7 @@
 """
 Translation Manager integration for Home Assistant.
 
-This integration provides a service to fetch translations from Home Assistant's frontend
+This integration provides a service to fetch translations from Home Assistant's backend
 and stores them in a sensor for easy access by ESPHome and other components.
 """
 from __future__ import annotations
