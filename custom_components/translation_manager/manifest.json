@@ -1,0 +1,11 @@
+{
+  "domain": "translation_manager",
+  "name": "Translation Manager",
+  "codeowners": ["@alaltitov"],
+  "config_flow": true,
+  "dependencies": ["http"],
+  "documentation": "https://github.com/alaltitov/homeassistant-translation-manager",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/alaltitov/homeassistant-translation-manager/issues",
+  "version": "1.0.0"
+}
