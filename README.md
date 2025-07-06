@@ -7,7 +7,7 @@ This integration allows you to receive all translations of the Home Assistant ba
 ### Manual Installation
 
 1. Download the files from this repository
-2. Copy the `custom_components/translation_manager` directory to your Home Assistant's `custom_components` directory
+2. Copy the `custom_components/display_tools` directory to your Home Assistant's `custom_components` directory
 3. Restart Home Assistant
 
 ## Configuration
