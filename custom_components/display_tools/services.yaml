@@ -1,0 +1,117 @@
+get_raw_translations:
+  name: Get Raw Translations
+  description: Get ALL translations for a language across all categories (returns response)
+  response:
+    optional: false
+  fields:
+    language:
+      name: Language
+      description: Language code (e.g., 'ru', 'en', 'de')
+      required: true
+      selector:
+        text:
+
+get_translations:
+  name: Get Translations
+  description: Get translations for specific category and optional keys (returns response)
+  response:
+    optional: false
+  fields:
+    language:
+      name: Language
+      description: Language code (e.g., 'ru', 'en', 'de')
+      required: true
+      selector:
+        text:
+    category:
+      name: Category
+      description: Translation category
+      required: true
+      selector:
+        select:
+          options:
+            - "title"
+            - "state"
+            - "entity"
+            - "entity_component"
+            - "exceptions"
+            - "config"
+            - "config_subentries"
+            - "config_panel"
+            - "options"
+            - "device_automation"
+            - "mfa_setup"
+            - "system_health"
+            - "application_credentials"
+            - "issues"
+            - "selector"
+            - "services"
+    keys:
+      name: Translation Keys (optional)
+      description: List of specific translation keys (if not provided, returns all keys for category)
+      required: false
+      selector:
+        object:
+
+get_translations_esphome:
+  name: Get Translations for ESPHome
+  description: Get translations and update sensor for ESPHome access
+  fields:
+    language:
+      name: Language
+      description: Language code (e.g., 'ru', 'en', 'de')
+      required: true
+      selector:
+        text:
+    category:
+      name: Category
+      description: Translation category
+      required: true
+      selector:
+        select:
+          options:
+            - "title"
+            - "state"
+            - "entity"
+            - "entity_component"
+            - "exceptions"
+            - "config"
+            - "config_subentries"
+            - "config_panel"
+            - "options"
+            - "device_automation"
+            - "mfa_setup"
+            - "system_health"
+            - "application_credentials"
+            - "issues"
+            - "selector"
+            - "services"
+    keys:
+      name: Translation Keys (optional)
+      description: List of specific translation keys (if not provided, returns all keys for category)
+      required: false
+      selector:
+        object:
+
+save_media_cover:
+  name: Save Media Cover
+  description: Download and process media player cover image
+  fields:
+    entity_id:
+      name: Entity ID
+      description: Media player entity ID
+      required: true
+      selector:
+        entity:
+          domain: media_player
+    size:
+      name: Size
+      description: Image size preset
+      required: true
+      selector:
+        select:
+          options:
+            - value: "small"
+              label: "Small (120x120)"
+            - value: "large"
+              label: "Large (160x160)"

@@ -1,0 +1,12 @@
+{
+  "domain": "display_tools",
+  "name": "Display Tools",
+  "codeowners": ["@alaltitov"],
+  "config_flow": true,
+  "dependencies": ["http"],
+  "documentation": "https://github.com/alaltitov/homeassistant-display-tools",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/alaltitov/homeassistant-display-tools/issues",
+  "requirements": ["Pillow", "aiohttp"],
+  "version": "1.0.0"
+}

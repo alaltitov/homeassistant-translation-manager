@@ -1,0 +1,76 @@
+{
+  "title": "Display Tools",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Display Tools",
+        "description": "Set up Display Tools integration"
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Only a single instance is allowed."
+    }
+  },
+  "services": {
+    "get_raw_translations": {
+      "name": "Get Raw Translations",
+      "description": "Get ALL translations for a language across all categories",
+      "fields": {
+        "language": {
+          "name": "Language",
+          "description": "Language code (e.g., 'ru', 'en', 'de')"
+        }
+      }
+    },
+    "get_translations": {
+      "name": "Get Translations",
+      "description": "Get translations for specific category and optional keys",
+      "fields": {
+        "language": {
+          "name": "Language",
+          "description": "Language code (e.g., 'ru', 'en', 'de')"
+        },
+        "category": {
+          "name": "Category",
+          "description": "Translation category"
+        },
+        "keys": {
+          "name": "Translation Keys",
+          "description": "List of specific translation keys (optional)"
+        }
+      }
+    },
+    "get_translations_esphome": {
+      "name": "Get Translations for ESPHome",
+      "description": "Get translations and update sensor for ESPHome access",
+      "fields": {
+        "language": {
+          "name": "Language",
+          "description": "Language code (e.g., 'ru', 'en', 'de')"
+        },
+        "category": {
+          "name": "Category",
+          "description": "Translation category"
+        },
+        "keys": {
+          "name": "Translation Keys",
+          "description": "List of specific translation keys (optional)"
+        }
+      }
+    },
+    "save_media_cover": {
+      "name": "Save Media Cover",
+      "description": "Download and process media player cover image",
+      "fields": {
+        "entity_id": {
+          "name": "Entity ID",
+          "description": "Media player entity ID"
+        },
+        "size": {
+          "name": "Size",
+          "description": "Image size preset (small: 120x120, large: 160x160)"
+        }
+      }
+    }
+  }
+}
