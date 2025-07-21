@@ -13,7 +13,7 @@ This integration allows you to receive all translations of the Home Assistant ba
 ## Configuration
 
 1. Go to Settings → Devices & Services → Add Integration
-2. Search for "Translation Manager"
+2. Search for "Display Tools"
 
 
 ## Usage
